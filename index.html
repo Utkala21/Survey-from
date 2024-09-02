@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!--Header start-->
+  <div class="h1">
+    <header class="header">
+      <h1 id="title">My Mini Project Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <hr>
+  </div>
+  <!--Header Ends-->
+  <main>
+    <div class="whole">
+      <!--form start-->
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+        </div>
+        <br>
+
+
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />
+        </div>
+        <br>
+
+        <div class="form-group">
+
+          <label id="number-label" for="number">
+            Age<span class="clue">(required)</span></label>
+
+
+          <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age"
+            required />
+
+        </div>
+        <br>
+
+        <div class="form-group">
+          <label>Your currtnt Position</label>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option value="">Select curent role</option>
+            <option value="Student">Student</option>
+            <option value="Teacher">Teacher</option>
+            <option value="learner">full time learner</option>
+            <option value="job">Full Time Job</option>
+            <option value="Other">Other</option>
+          </select>
+        </div><br>
+
+        <div class="form-group">
+          <p>Which thing are You like?</p>
+          <label>
+            <input name="user-recommend" value="study" type="radio" class="input-radio" checked />
+            Study</label>
+
+          <label>
+            <input name="user-recommend" value="Traveling" type="radio" class="input-radio" />
+            Traveling
+          </label>
+
+
+          <label><input name="user-recommend" value="vloging" type="radio" class="input-radio" />
+            Vloging</label>
+
+        </div><br>
+
+        <div class="form-group">
+          <p>
+            Aim of Your life?
+            <span class="clue">(Choose One)</span>
+          </p>
+
+          <label><input name="prefer" value="teacher" type="checkbox" class="input-checkbox">Teacher</label><br>
+          <label><input name="prefer" value="leastur" type="checkbox" class="input-checkbox">Leastur</label><br>
+          <label><input name="prefer" value="developer" type="checkbox"
+              class="input-checkbox">Lead-Developer.</label><br>
+          <label><input name="prefer" value="police" type="checkbox" class="input-checkbox">Police</label><br>
+          <label><input name="prefer" value="newsreporter" type="checkbox"
+              class="input-checkbox">News-reporter</label><br>
+          <label><input name="prefer" value="chief minister" type="checkbox"
+              class="input-checkbox">Chief-minister</label><br>
+
+        </div>
+        <br>
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here...">
+          </textarea>
+        </div>
+        <hr>
+        <hr>
+        <!--Button start-->
+        <div id="button">
+          <button type="submit" id="submit" class="submit-button"> Submit</button>
+          <button type="Reset" id="Reset" class="Reset-button"> Reset</button>
+        </div>
+        <!--Button Ends-->
+      </form>
+      <!--Form ends-->
+
+  </main>
+  <!--main section ends-->
+  <hr>
+  <hr>
+  <!--Footer Starts-->
+  <footer id="f3">
+    <p>🕉️ ||My first Project || @copyright by Utkala || Help me to keep Going🚀|| 🕉️ ||<a
+        href="mailto:rajkeshari9878@gmail.com">Contact me</a></p>
+  </footer>
+  <!--Footer Ends-->
+  </div>
+</body>
+
+</html>
